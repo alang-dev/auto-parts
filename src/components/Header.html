@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="Header.css">
+   
+</head>
+<body>    
+        <nav class="navbar">
+            <div class="navbar__logo col-2">
+                <img src="https://zrtechsolutions.com/demo/html/kar/assets/images/logo.png" alt="Logo">
+            </div>
+            <ul class="navbar__menu col-10 changed" >
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#product">Sản phẩm</a></li>
+                <li><a href="#servicesfull">Dịch vụ trọn gói</a></li>
+                <li><a href="#reviews">Review</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="navbar__toggle " id="navbarToggle">
+                <i>&#9776;</i>
+            </div>
+            <div class="navbar__close" id="navbarClose">
+                <i>
+                    &times;
+                </i>
+            </div>
+        </nav>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                var navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) { 
+                    navbar.classList.add('scrolled'); 
+                } else {
+                    navbar.classList.remove('scrolled'); 
+                }
+            });
+
+            document.getElementById('navbarToggle').addEventListener('click', function() {
+                var menu = document.querySelector('.navbar__menu');
+                var closeIcon = document.getElementById('navbarClose');
+                var toggleIcon = document.getElementById('navbarToggle');
+                
+              
+                menu.classList.toggle('active'); 
+            
+              
+                if (menu.classList.contains('active')) {
+                    toggleIcon.style.display = 'none'; 
+                    closeIcon.style.display = 'block'; 
+                } else {
+                    toggleIcon.style.display = 'block'; 
+                    closeIcon.style.display = 'none'; 
+                }
+            });
+            
+            document.getElementById('navbarClose').addEventListener('click', function() {
+                var menu = document.querySelector('.navbar__menu');
+                var closeIcon = document.getElementById('navbarClose');
+                var toggleIcon = document.getElementById('navbarToggle');
+            
+                menu.classList.remove('active'); 
+                toggleIcon.style.display = 'block'; 
+                closeIcon.style.display = 'none'; 
+            });
+            
+            
+        </script>
+</body>
+</html>
