@@ -1,3 +1,3 @@
-# One-Stop-Book
+# Auto Parts
 
-Welcome to **One-Stop-Book**, a comprehensive training project aimed at teaching HTML, CSS, and JavaScript by developing a static website about **auto parts**.
+Welcome to **Auto Parts**, a comprehensive training project aimed at teaching HTML, CSS, and JavaScript by developing a static website about **auto parts**.
