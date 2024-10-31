@@ -1,4 +1,4 @@
-
+..
 
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.newheader');
